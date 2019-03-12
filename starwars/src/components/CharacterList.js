@@ -4,11 +4,13 @@ import'./StarWars.css';
 
 const CharacterList = props =>{
     return (
-        <div className= "boxes">
-        {props.characters.map(character =>
-            <Character character ={character} />
-            // <Character character ={character} key= {character.created} />
-        )}
+        <div className= "container">
+            {props.starwarsChars.map(character =>
+                <div key ={character.name} className="card">  
+                     {/* map needs a key  */}
+                    <Character character = {character} />
+                </div>
+             )}
         </div>
     );
 };

@@ -4,23 +4,25 @@ import'./StarWars.css';
 
 const Character = props => {
     return(
-        <div className="starwar">
         <div>
-            <h2>{props.character.name}</h2>
-            {/* <img src="https://lumiere-a.akamaihd.net/v1/images/file_2729e1ec.jpeg?width=1200&region=0%2C0%2C2000%2C2000&quality=8" alt="Luke"/> */}
-            </div> 
-            <div>
-            <p><strong>Birth Year: </strong> {props.character.birth_year}</p>
-            <p><strong>Created: </strong> {props.character.created}</p>
-            <p><strong>Eye Color:</strong> {props.character.eye_color}</p>
-            <p><strong>Films:</strong> {props.character.films.length}</p>
-            <p><strong>Gender:</strong> {props.character.gender}</p>
-            <p><strong>Hair Color:</strong> {props.character.hair_color}</p>
-            <p><strong>Height: </strong> {props.character.height}</p>
-            <p><strong>Mass: </strong> {props.character.mass}</p>
-            <p><strong>Skin Color:</strong> {props.character.skin_color}</p>
-        </div>
-        </div>
+                <h2>{props.character.name}</h2>
+                    <div className = "attributes">
+                        <div className ="attributes-names">
+                            <p><strong>Birth Year: </strong> </p>
+                            <p><strong>Eye Color:</strong></p>
+                            <p><strong>Films:</strong></p>
+                            <p><strong>Gender:</strong></p>
+                            <p><strong>Skin Color:</strong></p>
+                        </div>
+                        <div className = "attributes-values">
+                            <p>{props.character.birth_year}</p>
+                            <p>{props.character.eye_color}</p>
+                            <p>{props.character.films.length}</p>
+                            <p>{props.character.gender}</p>
+                            <p>{props.character.skin_color}</p>
+                        </div>
+                    </div>
+                </div>
     );
 };
 

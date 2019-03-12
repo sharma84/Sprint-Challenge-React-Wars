@@ -8,7 +8,7 @@
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
     Class extends the base react class from the library, it holds state and has a render function. 
-    Functional takes props as argument and returns a react component. It does not have state method and is easy to read, debug and test. 
+    Functional takes props as an argument and returns a react component. It does not have state method and is easy to read, debug and test. 
 
 1.  Describe state.
     State determines how the component renders and behaves. It is an object that is used to hold data that may change over time and to control the behavior after each change. State is mutable and is generally updated by event handler. 
